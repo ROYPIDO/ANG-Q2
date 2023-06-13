@@ -1,0 +1,15 @@
+.content{
+    display: flex;
+    justify-content:space-between;
+    height: 100vh;
+
+
+}
+
+.haut{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
