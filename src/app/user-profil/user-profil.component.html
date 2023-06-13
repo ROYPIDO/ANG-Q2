@@ -1,0 +1,27 @@
+<main class="contentuser">
+  <div class="user">
+    <img [src]="imageSrc" [alt]="" />
+
+    <p>
+      <strong>Nom : {{ name }}</strong>
+    </p>
+    <p>
+      <strong>Prénom : {{ firstName }}</strong>
+    </p>
+    <textarea [(ngModel)]="quote"></textarea>
+
+        <button (click)="toggle()" id="bt">
+            {{buttonName}}
+        </button>
+        
+        <ng-container *ngIf="show">
+            <div style="margin: 0 auto;text-align: left;">
+                <div>
+                    <p>
+                        <strong>Mon âge : {{ age }}</strong>
+                    </p>
+                </div>
+            </div>
+        </ng-container>
+  </div>
+</main>
